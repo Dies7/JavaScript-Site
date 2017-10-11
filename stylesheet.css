@@ -7,8 +7,8 @@ body {
     height:400px;
     background:gray;
     margin:50px auto;
-    -webkit-animation:bgChange 2s 2s alternate infinite;
-    transition: all 2s ease;
+    /* -webkit-animation:bgChange 2s 2s alternate infinite;
+    transition: all 2s ease; */
 }
 
 button {
@@ -223,3 +223,7 @@ button {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+canvas {
+    border: 1px dotted black;
+}

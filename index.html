@@ -3,30 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>JavaScript Element Testing</title>
-    <link href="css.css" rel="stylesheet"/>
-    <script src="js.js"></script>
+    <link href="stylesheet.css" rel="stylesheet"/>
+    <script src="script.js"></script>
     <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "JavaScript is okay.";
-    }
     </script>
   </head>
   <body>
-    <p id="demo">JavaScript is not fun.</p>
+    <p id="javabutton">JavaScript is not fun.</p>
 
-    <button type="button" onclick="myFunction()">Click Me!</button>
+    <button type="button"
+     onclick="myFunction()">Click Me!</button>
 
     <br><br>
-    <button onclick="window.alert(2 + 2 - 1)">Quick Maths</button>
-
+    <button onclick="window.alert('This is a pop-up')">I do something!</button>
+    <br><br>
     <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">test 1</a>
+        <a href="#">test 2</a>
+        <a href="#">test 3</a>
+      </div>
+    </div>
 
     <div id="background"><!-- Main background -->
 
@@ -65,9 +63,11 @@
                  <button value="." class="btn-style num-bg period fall-back">.</button>
                  <button value="=" id="eqn-bg" class="eqn align">=</button>
                  </div>
-
              </div>
-
          </div>
+      <canvas id="a" width="200" height="200">
+        This text is displayed if your browser does not support HTML5 Canvas.
+      </canvas>
+      <script type='text/javascript' src='script.js'></script>
   </body>
 </html>
